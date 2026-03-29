@@ -69,6 +69,8 @@
       font-weight: 700;
       transition: .2s ease;
       border: 1px solid transparent;
+      cursor: pointer;
+      font-size: 16px;
     }
     .btn:hover { transform: translateY(-1px); }
     .btn-primary { background: linear-gradient(135deg, var(--accent), var(--accent2)); }
@@ -160,6 +162,9 @@
       border-radius: 18px;
       padding: 18px 20px;
     }
+    .payment-form {
+      margin: 0;
+    }
     .footer {
       text-align: center;
       color: #94a3b8;
@@ -188,7 +193,7 @@
         Готовые гайды, промпты, идеи контента и практические материалы, которые помогут начать зарабатывать с помощью ChatGPT, AI-видео и нейросетей уже сейчас.
       </p>
       <div class="actions">
-        <a class="btn btn-primary" href="https://t.me/ai_zarabotok3" target="_blank" rel="noopener noreferrer">Перейти в канал</a>
+        <a class="btn btn-primary" href="https://t.me/ai_zarabotok2" target="_blank" rel="noopener noreferrer">Перейти в канал</a>
         <a class="btn btn-secondary" href="https://t.me/Zarabotok49_bot" target="_blank" rel="noopener noreferrer">Открыть бота</a>
       </div>
     </div>
@@ -230,7 +235,7 @@
         <p class="section-sub">Для каждого продукта доступны 2 способа оплаты.</p>
 
         <div class="grid">
-          <article class="card">
+          <article class="card" id="pay-product-1">
             <h3>1000 ПРОМПТОВ ДЛЯ ЗАРАБОТКА С CHATGPT</h3>
             <div class="price">299 ⭐ / 410 ₽</div>
             <div class="desc">
@@ -242,13 +247,22 @@
               <li>Можно использовать сразу</li>
             </ul>
             <div class="top-links">
-              <a class="btn btn-secondary" href="https://t.me/ai_zarabotok3" target="_blank" rel="noopener noreferrer">Канал</a>
+              <a class="btn btn-secondary" href="https://t.me/ai_zarabotok2" target="_blank" rel="noopener noreferrer">Канал</a>
               <a class="btn btn-primary" href="https://t.me/Zarabotok49_bot" target="_blank" rel="noopener noreferrer">Купить в боте</a>
-              <a class="btn btn-green" href="https://yoomoney.ru/quickpay/confirm.xml?receiver=410014639141366&sum=410&targets=1000%20промптов" target="_blank" rel="noopener noreferrer">Оплатить 410 ₽</a>
+              <form class="payment-form" method="POST" action="https://yoomoney.ru/quickpay/confirm" target="_blank">
+                <input type="hidden" name="receiver" value="410014639141366">
+                <input type="hidden" name="quickpay-form" value="button">
+                <input type="hidden" name="paymentType" value="AC">
+                <input type="hidden" name="sum" value="410" data-type="number">
+                <input type="hidden" name="label" value="product_1">
+                <input type="hidden" name="targets" value="1000 ПРОМПТОВ ДЛЯ ЗАРАБОТКА С CHATGPT">
+                <input type="hidden" name="successURL" value="https://t.me/Zarabotok49_bot">
+                <button class="btn btn-green" type="submit">Оплатить 410 ₽</button>
+              </form>
             </div>
           </article>
 
-          <article class="card">
+          <article class="card" id="pay-product-2">
             <h3>50 СПОСОБОВ ЗАРАБОТАТЬ НА НЕЙРОСЕТЯХ В 2026 ГОДУ</h3>
             <div class="price">289 ⭐ / 400 ₽</div>
             <div class="desc">
@@ -260,13 +274,22 @@
               <li>Подходит для онлайн-работы</li>
             </ul>
             <div class="top-links">
-              <a class="btn btn-secondary" href="https://t.me/ai_zarabotok3" target="_blank" rel="noopener noreferrer">Канал</a>
+              <a class="btn btn-secondary" href="https://t.me/ai_zarabotok2" target="_blank" rel="noopener noreferrer">Канал</a>
               <a class="btn btn-primary" href="https://t.me/Zarabotok49_bot" target="_blank" rel="noopener noreferrer">Купить в боте</a>
-              <a class="btn btn-green" href="https://yoomoney.ru/quickpay/confirm.xml?receiver=410014639141366&sum=400&targets=50%20способов" target="_blank" rel="noopener noreferrer">Оплатить 400 ₽</a>
+              <form class="payment-form" method="POST" action="https://yoomoney.ru/quickpay/confirm" target="_blank">
+                <input type="hidden" name="receiver" value="410014639141366">
+                <input type="hidden" name="quickpay-form" value="button">
+                <input type="hidden" name="paymentType" value="AC">
+                <input type="hidden" name="sum" value="400" data-type="number">
+                <input type="hidden" name="label" value="product_2">
+                <input type="hidden" name="targets" value="50 СПОСОБОВ ЗАРАБОТАТЬ НА НЕЙРОСЕТЯХ В 2026 ГОДУ">
+                <input type="hidden" name="successURL" value="https://t.me/Zarabotok49_bot">
+                <button class="btn btn-green" type="submit">Оплатить 400 ₽</button>
+              </form>
             </div>
           </article>
 
-          <article class="card">
+          <article class="card" id="pay-product-3">
             <h3>365 ИДЕЙ КОНТЕНТА ДЛЯ TELEGRAM / TIKTOK / REELS</h3>
             <div class="price">289 ⭐ / 405 ₽</div>
             <div class="desc">
@@ -278,13 +301,22 @@
               <li>Для роста и продаж</li>
             </ul>
             <div class="top-links">
-              <a class="btn btn-secondary" href="https://t.me/ai_zarabotok3" target="_blank" rel="noopener noreferrer">Канал</a>
+              <a class="btn btn-secondary" href="https://t.me/ai_zarabotok2" target="_blank" rel="noopener noreferrer">Канал</a>
               <a class="btn btn-primary" href="https://t.me/Zarabotok49_bot" target="_blank" rel="noopener noreferrer">Купить в боте</a>
-              <a class="btn btn-green" href="https://yoomoney.ru/quickpay/confirm.xml?receiver=410014639141366&sum=405&targets=365%20идей" target="_blank" rel="noopener noreferrer">Оплатить 405 ₽</a>
+              <form class="payment-form" method="POST" action="https://yoomoney.ru/quickpay/confirm" target="_blank">
+                <input type="hidden" name="receiver" value="410014639141366">
+                <input type="hidden" name="quickpay-form" value="button">
+                <input type="hidden" name="paymentType" value="AC">
+                <input type="hidden" name="sum" value="405" data-type="number">
+                <input type="hidden" name="label" value="product_3">
+                <input type="hidden" name="targets" value="365 ИДЕЙ КОНТЕНТА ДЛЯ TELEGRAM / TIKTOK / REELS">
+                <input type="hidden" name="successURL" value="https://t.me/Zarabotok49_bot">
+                <button class="btn btn-green" type="submit">Оплатить 405 ₽</button>
+              </form>
             </div>
           </article>
 
-          <article class="card">
+          <article class="card" id="pay-product-4">
             <h3>КАК ДЕЛАТЬ AI-ВИДЕО И ЗАРАБАТЫВАТЬ НА НИХ</h3>
             <div class="price">279 ⭐ / 390 ₽</div>
             <div class="desc">
@@ -296,9 +328,18 @@
               <li>Помогает монетизировать AI-контент</li>
             </ul>
             <div class="top-links">
-              <a class="btn btn-secondary" href="https://t.me/ai_zarabotok3" target="_blank" rel="noopener noreferrer">Канал</a>
+              <a class="btn btn-secondary" href="https://t.me/ai_zarabotok2" target="_blank" rel="noopener noreferrer">Канал</a>
               <a class="btn btn-primary" href="https://t.me/Zarabotok49_bot" target="_blank" rel="noopener noreferrer">Купить в боте</a>
-              <a class="btn btn-green" href="https://yoomoney.ru/quickpay/confirm.xml?receiver=410014639141366&sum=390&targets=AI%20видео" target="_blank" rel="noopener noreferrer">Оплатить 390 ₽</a>
+              <form class="payment-form" method="POST" action="https://yoomoney.ru/quickpay/confirm" target="_blank">
+                <input type="hidden" name="receiver" value="410014639141366">
+                <input type="hidden" name="quickpay-form" value="button">
+                <input type="hidden" name="paymentType" value="AC">
+                <input type="hidden" name="sum" value="390" data-type="number">
+                <input type="hidden" name="label" value="product_4">
+                <input type="hidden" name="targets" value="КАК ДЕЛАТЬ AI-ВИДЕО И ЗАРАБАТЫВАТЬ НА НИХ">
+                <input type="hidden" name="successURL" value="https://t.me/Zarabotok49_bot">
+                <button class="btn btn-green" type="submit">Оплатить 390 ₽</button>
+              </form>
             </div>
           </article>
         </div>
@@ -308,7 +349,7 @@
           <p>Можно купить прямо в Telegram через Stars или оплатить через ЮMoney в рублях.</p>
           <div class="actions">
             <a class="btn btn-primary" href="https://t.me/Zarabotok49_bot" target="_blank" rel="noopener noreferrer">Перейти в бота</a>
-            <a class="btn btn-secondary" href="https://t.me/ai_zarabotok3" target="_blank" rel="noopener noreferrer">Подписаться на канал</a>
+            <a class="btn btn-secondary" href="https://t.me/ai_zarabotok2" target="_blank" rel="noopener noreferrer">Подписаться на канал</a>
           </div>
         </div>
       </div>
